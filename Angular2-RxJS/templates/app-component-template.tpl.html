@@ -1,0 +1,12 @@
+<div>
+    <div><button (click)="getData()">Get Player List</button></div>
+    <hr>
+    <div *ngFor="let item of players">
+        <div>
+            <strong>{{item.name}}</strong>
+            <div><span>{{item.age}}</span> . <span>{{item.gender}}</span></div>
+            <div>{{item.email}}</div>
+            <div><hr></div>
+        </div>
+    </div>
+</div>
