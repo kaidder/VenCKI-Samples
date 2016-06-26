@@ -22,6 +22,10 @@ export class AppComponent {
       .subscribe( result => this.players = result);
   }
 
+  getDataAsAPromise(){
+    this.service.getDataAsAPromise().then( result => this.players = result.json(), error => console.log(error));
+  }
+
   constructor(private service: PlayerService){}
   
 }

@@ -9,6 +9,10 @@ export class PlayerService {
     constructor(private http: Http){}
 
     getData(): Observable<Response> {
-        return this.http.get('http://localhost:4001/api/search');
+        return this.http.get('api/search');
+    }
+
+    getDataAsAPromise(): Promise<Response> {
+        return this.http.get('api/search').toPromise();
     }
 }

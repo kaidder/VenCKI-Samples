@@ -16,7 +16,10 @@ var PlayerService = (function () {
         this.http = http;
     }
     PlayerService.prototype.getData = function () {
-        return this.http.get('http://localhost:4001/api/search');
+        return this.http.get('api/search');
+    };
+    PlayerService.prototype.getDataAsAPromise = function () {
+        return this.http.get('api/search').toPromise();
     };
     PlayerService = __decorate([
         core_1.Injectable(), 

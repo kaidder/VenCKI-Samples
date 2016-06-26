@@ -24,6 +24,10 @@ var AppComponent = (function () {
             .map(function (result) { return result.json(); })
             .subscribe(function (result) { return _this.players = result; });
     };
+    AppComponent.prototype.getDataAsAPromise = function () {
+        var _this = this;
+        this.service.getDataAsAPromise().then(function (result) { return _this.players = result.json(); }, function (error) { return console.log(error); });
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
