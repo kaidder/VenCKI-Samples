@@ -32,6 +32,11 @@ app.get('/index.html', function (req, res) {
     res.status(200).send(index);
 });
 
+app.get('/', function (req, res) {
+    var index = fs.readFileSync('index.html', 'utf8');
+    res.status(200).send(index);
+});
+
 app.get('/styles.css', function (req, res) {
     var index = fs.readFileSync('styles.css', 'utf8');
     res.status(200).send(index);
