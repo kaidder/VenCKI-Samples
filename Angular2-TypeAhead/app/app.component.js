@@ -41,7 +41,7 @@ System.register(['angular2/core', 'angular2/common', 'rxjs/Rx', 'angular2/http']
                 }
                 AppComponent = __decorate([
                     core_1.Component({
-                        selector: 'search',
+                        selector: 'typeahead-search',
                         templateUrl: 'app/templates/search.tpl.html'
                     }), 
                     __metadata('design:paramtypes', [common_1.FormBuilder, http_1.Http])

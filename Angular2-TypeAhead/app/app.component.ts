@@ -7,7 +7,7 @@ import 'rxjs/Rx';
 import {Http} from 'angular2/http';
 
 @Component({
-    selector: 'search',
+    selector: 'typeahead-search',
     templateUrl: 'app/templates/search.tpl.html'
 })
 export class AppComponent
