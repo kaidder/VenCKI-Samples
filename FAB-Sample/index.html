@@ -23,13 +23,21 @@
     </md-button>
     <md-content layout-padding flex>
         <div layout-padding>
-            
+            <strong>Show a FAB button on top right,</strong>
+            <pre>
+                <code>
+   &lt;md-button ng-click=&quot;null&quot; class=&quot;md-fab md-fab-top-right&quot; aria-label=&quot;An Idea&quot;&gt;
+        &lt;md-icon md-svg-src=&quot;images/ic_lightbulb_outline_white_48px.svg&quot;&gt;&lt;/md-icon&gt;
+    &lt;/md-button&gt;
+                </code>
+            </pre>
 
             <!--
             A logic outside the FAB Speed Dial can control opening or clossing the component.
             Following is a switch, but it could be more sophisticated logic. When the a condition is true, toggle open/close the FAB Menu
         -->
             <md-switch ng-model="isOpen">Control opening/closing the menu outside the FAB toolbar</md-switch>
+<strong>Code for Speed dial,</strong> 
 
             <pre>
                 <code>
