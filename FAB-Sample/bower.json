@@ -1,0 +1,21 @@
+{
+  "name": "FAB-Sample",
+  "homepage": "https://github.com/kvkirthy/VenCKI-Samples",
+  "description": "",
+  "main": "",
+  "authors": [
+    "V Keerti Kotaru"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "^1.1.0"
+  }
+}

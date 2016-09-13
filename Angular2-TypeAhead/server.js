@@ -28,6 +28,11 @@ app.get('/index.html', function(req, res) {
     res.send(200, index);
 });
 
+app.get('/', function(req, res) {
+    var index = fs.readFileSync('index.html', 'utf8');
+    res.send(200, index);
+});
+
 app.use('/node_modules', express.static('node_modules'));
 app.use('/app', express.static('app'));
 
