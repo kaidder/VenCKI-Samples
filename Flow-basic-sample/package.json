@@ -1,0 +1,11 @@
+{
+  "name": "flow-basic-sample",
+  "version": "1.0.0",
+  "description": "basic code sample for flow",
+  "main": "index.js",
+  "scripts": {
+    "flow": "flow check || exit 0"
+  },
+  "author": "VenCKi",
+  "license": "ISC"
+}
