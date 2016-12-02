@@ -1,0 +1,36 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\110190\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'start' ]
+2 info using npm@3.10.8
+3 info using node@v4.4.7
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle flow-sample-2@0.0.1~prestart: flow-sample-2@0.0.1
+6 silly lifecycle flow-sample-2@0.0.1~prestart: no script for prestart, continuing
+7 info lifecycle flow-sample-2@0.0.1~start: flow-sample-2@0.0.1
+8 verbose lifecycle flow-sample-2@0.0.1~start: unsafe-perm in lifecycle true
+9 verbose lifecycle flow-sample-2@0.0.1~start: PATH: C:\Users\110190\AppData\Roaming\npm\node_modules\npm\bin\node-gyp-bin;D:\Me\Code\react\Flow\Demo\Reddit-Implementation\node_modules\.bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\Microsoft VS Code;C:\Users\110190\AppData\Roaming\npm;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\110190\AppData\Roaming\npm\node_modules\flow-bin
+10 verbose lifecycle flow-sample-2@0.0.1~start: CWD: D:\Me\Code\react\Flow\Demo\Reddit-Implementation
+11 silly lifecycle flow-sample-2@0.0.1~start: Args: [ '/d /s /c',
+11 silly lifecycle   'start http://localhost:8080 & webpack-dev-server --hot' ]
+12 verbose stack Error: kill ENOSYS
+12 verbose stack     at exports._errnoException (util.js:873:11)
+12 verbose stack     at process.kill (node.js:777:15)
+12 verbose stack     at process.listener (C:\Users\110190\AppData\Roaming\npm\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+12 verbose stack     at emitNone (events.js:72:20)
+12 verbose stack     at process.emit (events.js:166:7)
+12 verbose stack     at processEmit (C:\Users\110190\AppData\Roaming\npm\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at processEmit (C:\Users\110190\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at Signal.wrap.onsignal (node.js:804:46)
+13 verbose cwd D:\Me\Code\react\Flow\Demo\Reddit-Implementation
+14 error Windows_NT 6.1.7601
+15 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\110190\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "start"
+16 error node v4.4.7
+17 error npm  v3.10.8
+18 error code ENOSYS
+19 error errno ENOSYS
+20 error syscall kill
+21 error kill ENOSYS
+22 error If you need help, you may report this error at:
+22 error     <https://github.com/npm/npm/issues>
+23 verbose exit [ 1, true ]
