@@ -212,27 +212,53 @@
         </div>
 
         <div id="moreTypes" class="step slide" data-x="1000" data-y="1000" data-rotate="-90">
-            <strong>More Types</strong>
-            <hr/>
-            <p style="width:100%; text-align:center"  >
-                <br/>
-                <ul class="small-font">
-                    <li>any</li>
-                    <li>&nbsp; </li>
+            <strong>any</strong>
+            <hr/>                   
+        <pre>
+            <div style="font-size:14pt; font-family: consolas">
+                // any is a super type and subtype of all types
+                let genericVariable: any = 20;
+                let numericVariable: number;
 
-                    <li>mixed</li>
-                    <li>&nbsp; </li>
+                genericVariable = numericVariable; // No error
+                numericVariable = genericVariable; // No error
+            </div>
+        </pre>
+        </div>
 
-                    <li>Array</li>
-                    <li>&nbsp; </li>
+        <div id="moreTypes2" class="step slide" data-x="0" data-y="2000" data-rotate="-90">
+            <strong>mixed</strong>
+            <hr/>                   
+        <pre>
+            <div style="font-size:14pt; font-family: consolas">
+                // mixed is a super type of all types
+                
+                let genericVariable: mixed = 20;
+                let numericVariable: number;
 
-                    <li>null</li>
-                    <li>&nbsp; </li>
+                genericVariable = numericVariable; // No error
+                numericVariable = genericVariable; // Error, special type can\'t be substituted by generic type
+            </div>
+        </pre>
+        </div>        
 
-                    <li>void</li>
-                    <li>&nbsp; </li>                    
-                </ul>
-            </p>
+        <div id="moreTypes3" class="step slide" data-x="1000" data-y="2000" data-rotate="-90">
+             <strong>union</strong>
+             <hr/>
+        <pre>
+            <div style="font-size:14pt; font-family: consolas">
+            type weekdays = 
+                    "Monday" |
+                    "Tuesday"|
+                    "Wednesday"|
+                    "Thursday"|
+                    "Friday"
+                    ;
+
+                    let aDay: weekdays;
+                    aDay = "Saturday"; // Error
+            </div>
+        </pre>
         </div>
 
         <div id="2gsbf" class="step slide" data-x="-2000" data-y="-1500">
