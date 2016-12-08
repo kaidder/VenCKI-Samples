@@ -237,7 +237,9 @@
                 let numericVariable: number;
 
                 genericVariable = numericVariable; // No error
-                numericVariable = genericVariable; // Error, special type can\'t be substituted by generic type
+
+                // Error, special type can\'t be substituted by generic type
+                numericVariable = genericVariable; 
             </div>
         </pre>
         </div>        
