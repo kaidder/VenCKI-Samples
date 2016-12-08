@@ -95,8 +95,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
 
-<body class="impress-not-supported">
-
+<body class="impress-not-supported">    
     <!--
     For example this fallback message is only visible when there is `impress-not-supported` class on body.
 -->
@@ -104,6 +103,10 @@
         <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version
             of this presentation.</p>
         <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div class="hint">
+        <p>Use a spacebar or arrow keys to navigate</p>
     </div>
 
     <div id="impress">
@@ -119,6 +122,12 @@
             <p style="width:100%; text-align: center">
                 <img src="images/logo.PNG" alt="">
             </p>
+
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div class="small-font" style="text-align: right;"> *Use arrow keys to navigate between slides</div>
         </div>
 
         <div id="speakerIntro" class="step slide" data-x="0" data-y="0">
@@ -144,7 +153,7 @@
 
 
         <div id="book" class="step slide" data-x="1000" data-y="0">
-            <strong>V Keerti Kotaru</strong>
+            <strong>V Keerti Kotaru, author of</strong>
             <hr/>
             <p style="width:100%; text-align: center">
                 <br/>
@@ -181,12 +190,42 @@
             </p>
         </div>
 
-        <div id="title" class="step" data-x="-2000" data-y="100" data-scale="4">
-            <span class="try">Do we need </span>
-            <h1>types</h1>
+        <div id="title" class="step" data-x="-2000" data-y="-400" data-scale="1">
+            <span class="try">Do we have </span>
+            <h1>data types</h1>
             <span class="footnote">in JavaScript?</span>
         </div>
+        <div id="source" class="step" data-x="-2200" data-y="300" data-rotate="20" data-scale="1">
+            <strong>JavaScript is a loosely typed dynamic language.</strong>
+            <span class="small-font">Types are determined automatically while running the script. </span>
+        </div>
+        <div id="jsTypes" class="step slide" data-x="-2000" data-y="1200" data-rotate="-180">
+            <strong>Data Types in JavaScript</strong>
+            <hr/>
+            <p style="width:100%;"  >
+                <br/>
+                <div>Primitives:</div>
+                
+                <br/>
+                <ul class="small-font">
+                    <li>Boolean</li>
+                    <li>&nbsp; </li>
 
+                    <li>Null</li>
+                    <li>&nbsp; </li>
+
+                    <li>Undefined</li>
+                    <li>&nbsp; </li>
+
+                    <li>Number</li>
+                    <li>&nbsp; </li>
+
+                    <li>String</li>
+                    <li>&nbsp; </li>    
+                </ul>
+                and... Object
+            </p>
+        </div>
         <div id="primitiveTypes" class="step slide" data-x="0" data-y="1000" data-rotate="-90">
             <strong>Primitive Types</strong>
             <hr/>
@@ -437,10 +476,7 @@
     
     Just sayin' ;)
     
--->
-    <!--<div class="hint">
-        <p>Use a spacebar or arrow keys to navigate</p>
-    </div>-->
+-->    
     <script>
 if ("ontouchstart" in document.documentElement) { 
     document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
