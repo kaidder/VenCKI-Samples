@@ -253,35 +253,44 @@
         <div id="flowsyntax1" class="step slide" data-x="0" data-y="3000" data-rotate="-90">
             <strong>Flow Syntax</strong>
             <hr/>
-            <p style="width:100%; text-align: center"  >
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <code-text>let variableName: dataType</code-text>
-            </p>
+        <pre class="small-font">
+<code-text>let variableName: dataType</code-text>
+<strong>Eg: </strong> <code-text>let num1: number</code-text>
+<code-text>
+function isLongString(param1: string): boolean{
+    if(param1.length > 10){
+        return true;
+    }else{
+        return false;
+    }
+}
+</code-text>
+<strong>ES 2015 Way:</strong>
+<code-text>
+const isLongString = 
+(param: string): boolean => (param.length > 10)? true:false
+</code-text>
+        </pre>
         </div>
+
+        
         <div id="flowsyntax2" class="step slide" data-x="1000" data-y="3000" data-rotate="-90">
             <strong>Type Alias</strong>
             <hr/>
-            <p style="width:100%; text-align: center"  >
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <code-text>
-                    type dinosaur = {
-                        order: string;
-                        appeared: number;
-                        height: number;
-                        length: number;
-                       }
-                </code-text>
-            </p>
+        <pre>
+
+
+
+            <code-text>
+        type dinosaur = { 
+            order: string; 
+            appeared: number; 
+            height: number; 
+            length: number; 
+        }
+            </code-text>
+
+        </pre>
         </div>        
         <div id="primitiveTypes" class="step slide" data-x="0" data-y="2000" data-rotate="-90">
             <strong>Flow - Primitive Types</strong>
