@@ -84,7 +84,7 @@
         }
         
         code-text {
-            font-family: 'consolas'
+            font-family: 'consolas', 'courier'
         }
     </style>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic"
@@ -182,21 +182,6 @@
             <div style="font-size:20pt; color: darkblue;">Flow enables annotating JavaScript variables and objects with types. </div>
         </div>-->
 
-        <div id="FlowIntro" class="step slide" data-x="2000" data-y="0" data-z="-90" data-rotate-x="0" data-rotate-y="90" data-scale="4">
-            <strong>Flow - Introduction</strong>
-            <hr/>
-            <p style="font-size:28pt; color: darkblue;">
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/> Flow is a <b class="rotating">static type checker</b> for JavaScript.
-                <div style="font-size:20pt; color: darkblue;">Flow enables annotating JavaScript variables and objects with types. </div>
-
-            </p>
-        </div>
-
         <div id="title" class="step" data-x="-2000" data-y="-400" data-scale="1">
             <span class="try">Do we have </span>
             <h1>data types</h1>
@@ -233,8 +218,73 @@
                 and... Object
             </p>
         </div>
-        <div id="primitiveTypes" class="step slide" data-x="0" data-y="1000" data-rotate="-90">
-            <strong>Primitive Types</strong>
+        <div id="FlowIntro" class="step slide" data-x="2000" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="90" data-scale="4">
+            <strong>Flow - Introduction</strong>
+            <hr/>
+            <p style="font-size:28pt; color: darkblue;">
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/> Flow is a <b class="rotating">static type checker</b> for JavaScript.
+                <div style="font-size:20pt; color: darkblue;">Flow enables annotating JavaScript variables and objects with types. </div>
+
+            </p>
+        </div>        
+
+        <div id="vscode1" class="step slide" data-x="3500" data-y="0" data-rotate-z="45">
+            <strong>Visual Studio Code for Flow</strong>
+            <hr/>
+            <br/>
+            <br/>
+            <div style="text-align: center">
+                <img src="images/vscode.png" style="max-height:200px" alt="">   
+                <div>Use following configuration in Workspace or User Settings</div> 
+                <br/>
+                <code-text>
+                    "javascript.validate.enable": false, <br/> "typescript.validate.enable": false
+                </code-text>
+            </div>
+
+        </div>
+<!--
+           -->
+        <div id="flowsyntax1" class="step slide" data-x="0" data-y="3000" data-rotate="-90">
+            <strong>Flow Syntax</strong>
+            <hr/>
+            <p style="width:100%; text-align: center"  >
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <code-text>let variableName: dataType</code-text>
+            </p>
+        </div>
+        <div id="flowsyntax2" class="step slide" data-x="1000" data-y="3000" data-rotate="-90">
+            <strong>Type Alias</strong>
+            <hr/>
+            <p style="width:100%; text-align: center"  >
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <code-text>
+                    type dinosaur = {
+                        order: string;
+                        appeared: number;
+                        height: number;
+                        length: number;
+                       }
+                </code-text>
+            </p>
+        </div>        
+        <div id="primitiveTypes" class="step slide" data-x="0" data-y="2000" data-rotate="-90">
+            <strong>Flow - Primitive Types</strong>
             <hr/>
             <p style="width:100%; text-align:center"  >
                 <br/>
@@ -257,7 +307,7 @@
             </p>
         </div>
 
-        <div id="moreTypes" class="step slide" data-x="1000" data-y="1000" data-rotate="-90">
+        <div id="moreTypes" class="step slide" data-x="1000" data-y="2000" data-rotate="-90">
             <strong>any</strong>
             <hr/>                   
         <pre>
@@ -272,7 +322,7 @@
         </pre>
         </div>
 
-        <div id="moreTypes2" class="step slide" data-x="0" data-y="2000" data-rotate="-90">
+        <div id="moreTypes2" class="step slide" data-x="0" data-y="1000" data-rotate="-90">
             <strong>mixed</strong>
             <hr/>                   
         <pre>
@@ -290,7 +340,7 @@
         </pre>
         </div>        
 
-        <div id="moreTypes3" class="step slide" data-x="1000" data-y="2000" data-rotate="-90">
+        <div id="moreTypes3" class="step slide" data-x="1000" data-y="1000" data-rotate="-90">
              <strong>union</strong>
              <hr/>
         <pre>
