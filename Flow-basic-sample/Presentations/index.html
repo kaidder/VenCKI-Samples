@@ -53,7 +53,7 @@ Flow a static type checker for JavaScript. A Facebook open source project. It wo
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>Flow</title>
-    <meta name="description" content="Flow a static type checker for JavaScript. Deck is authored by V. Keerti Kotaru. Connect @kvkirthy on Twitter"
+    <meta name="description" content="Flow a static type checker for JavaScript. Deck is authored by V. Keerti Kotaru. Connect @KeertiKotaru on Twitter"
     />
     <meta name="author" content="V Keerti Kotaru" />
 
@@ -68,7 +68,7 @@ Flow a static type checker for JavaScript. A Facebook open source project. It wo
         }
         
         code-text {
-            font-family: 'consolas'
+            font-family: 'consolas', 'courier'
         }
     </style>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic"
@@ -164,27 +164,8 @@ Flow a static type checker for JavaScript. A Facebook open source project. It wo
         <!--<div id="two" class="step" data-x="-1550" data-y="3000" data-z="-100" data-rotate-x="45" data-rotate-y="90" data-scale="2">
             <p style="font-size:28pt; color: darkblue;">Flow is a <b class="rotating">static type checker</b> for JavaScript. </p>
             <div style="font-size:20pt; color: darkblue;">Flow enables annotating JavaScript variables and objects with types. </div>
-        </div>-->
-
-        <div id="FlowIntro" class="step slide" data-x="2000" data-y="0" data-z="-90" data-rotate-x="0" data-rotate-y="90" data-scale="4">
-            <strong>Flow - Introduction</strong>
-            <hr/>
-            <p style="font-size:28pt; color: darkblue;">
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/> Flow is a <b class="rotating">static type checker</b> for JavaScript.
-                <div style="font-size:20pt; color: darkblue;">Flow enables annotating JavaScript variables and objects with types. </div>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <div class="small-font">Read Keerti Kotaru thoughts on Flow at  - <a href="http://venckicode.blogspot.in/2016/12/optimizing-flow-using-it-with-vs-code.html" target="__blank"> 1 </a> & <a href="http://venckicode.blogspot.in/2016/12/idiomatic-javascript-with-flow.html" target="__blank"> 2 </a></div>
-            </p>
-        </div>
-
+        </div>--> 
+        
         <div id="title" class="step" data-x="-2000" data-y="-400" data-scale="1">
             <span class="try">Do we have </span>
             <h1>data types</h1>
@@ -221,8 +202,85 @@ Flow a static type checker for JavaScript. A Facebook open source project. It wo
                 and... Object
             </p>
         </div>
-        <div id="primitiveTypes" class="step slide" data-x="0" data-y="1000" data-rotate="-90">
-            <strong>Primitive Types</strong>
+        <div id="FlowIntro" class="step slide" data-x="2000" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="90" data-scale="4">
+            <strong>Flow - Introduction</strong>
+            <hr/>
+            <p style="font-size:28pt; color: darkblue;">
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/> Flow is a <b class="rotating">static type checker</b> for JavaScript.
+                <div style="font-size:20pt; color: darkblue;">Flow enables annotating JavaScript variables and objects with types. </div>
+
+            </p>
+        </div>        
+
+        <div id="vscode1" class="step slide" data-x="3500" data-y="0" data-rotate-z="45">
+            <strong>Using Flow with Visual Studio Code</strong>
+            <hr/>
+            <br/>
+            <div style="text-align: center">
+                <img src="images/vscode.png" style="max-height:200px" alt="">   
+                <img src="images/flow.png" style="max-height:200px" alt="">                   
+                <div>
+                    Flow extension for VS Code - 
+                    <a href="https://marketplace.visualstudio.com/items?itemName=flowtype.flow-for-vscode" target="__blank">Flow language support
+</a>            </div><br/>
+                <div class="small-font">Use following configuration in Workspace or User Settings</div> 
+                <code-text>
+                    "javascript.validate.enable": false, <br/> "typescript.validate.enable": false
+                </code-text>
+            </div>
+
+        </div>
+<!--
+           -->
+        <div id="flowsyntax1" class="step slide" data-x="0" data-y="3000" data-rotate="-90">
+            <strong>Flow Syntax</strong>
+            <hr/>
+        <pre class="small-font">
+<code-text>let variableName: dataType</code-text>
+<strong>Eg: </strong> <code-text>let num1: number</code-text>
+<code-text>
+function isLongString(param1: string): boolean{
+    if(param1.length > 10){
+        return true;
+    }else{
+        return false;
+    }
+}
+</code-text>
+<strong>ES 2015 Way:</strong>
+<code-text>
+const isLongString = 
+(param: string): boolean => (param.length > 10)? true:false
+</code-text>
+        </pre>
+        </div>
+
+        
+        <div id="flowsyntax2" class="step slide" data-x="1000" data-y="3000" data-rotate="-90">
+            <strong>Type Alias</strong>
+            <hr/>
+        <pre>
+
+
+
+            <code-text>
+        type dinosaur = { 
+            order: string; 
+            appeared: number; 
+            height: number; 
+            length: number; 
+        }
+            </code-text>
+
+        </pre>
+        </div>        
+        <div id="primitiveTypes" class="step slide" data-x="0" data-y="2000" data-rotate="-90">
+            <strong>Flow - Primitive Types</strong>
             <hr/>
             <p style="width:100%; text-align:center"  >
                 <br/>
@@ -245,7 +303,7 @@ Flow a static type checker for JavaScript. A Facebook open source project. It wo
             </p>
         </div>
 
-        <div id="moreTypes" class="step slide" data-x="1000" data-y="1000" data-rotate="-90">
+        <div id="moreTypes" class="step slide" data-x="1000" data-y="2000" data-rotate="-90">
             <strong>any</strong>
             <hr/>                   
         <pre>
@@ -260,7 +318,7 @@ Flow a static type checker for JavaScript. A Facebook open source project. It wo
         </pre>
         </div>
 
-        <div id="moreTypes2" class="step slide" data-x="0" data-y="2000" data-rotate="-90">
+        <div id="moreTypes2" class="step slide" data-x="0" data-y="1000" data-rotate="-90">
             <strong>mixed</strong>
             <hr/>                   
         <pre>
@@ -278,7 +336,7 @@ Flow a static type checker for JavaScript. A Facebook open source project. It wo
         </pre>
         </div>        
 
-        <div id="moreTypes3" class="step slide" data-x="1000" data-y="2000" data-rotate="-90">
+        <div id="moreTypes3" class="step slide" data-x="1000" data-y="1000" data-rotate="-90">
              <strong>union</strong>
              <hr/>
         <pre>
