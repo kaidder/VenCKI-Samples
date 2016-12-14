@@ -6,6 +6,8 @@ import Titlebar from './titlebar.jsx';
 
 type CounterProps = {
     offset: number;
+    eventCallback?: (num: number, eventTime: Date) => void;
+
 };
 
 export default class Counter extends React.Component{
@@ -32,14 +34,21 @@ export default class Counter extends React.Component{
 
     increment(): void{
         this.setState({counterValue: this.state.counterValue + this.props.offset});
+
+        if(this.props.eventCallback != null){
+            this.props.eventCallback(this.state.counterValue, new Date());
+        }
     }
     
     decrement(){
         this.setState({counterValue: this.state.counterValue - this.props.offset});
+
+        if(this.props.eventCallback != null){
+            this.props.eventCallback(this.state.counterValue, new Date());
+        }
     }
 
-    render(){
-        console.log(this.props.offset);
+    render(){        
         return <div>
             <Titlebar />
             <h1>{this.state.counterValue}</h1>
